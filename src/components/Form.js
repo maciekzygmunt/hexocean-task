@@ -151,12 +151,16 @@ const Input = styled.input`
   border: 1px solid #ced4da;
   border-radius: 6px;
   height: 1rem;
+  width: 20rem;
   padding: 0.5rem;
   transition: all 150ms ease-out;
   font-family: Inter;
   &:focus {
     outline: none;
     border: 0.5px solid rgba(28, 199, 56, 1);
+  }
+  @media (max-width: 40rem) {
+    width: 15rem;
   }
 `;
 
