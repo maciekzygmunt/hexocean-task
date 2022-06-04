@@ -24,7 +24,7 @@ function Form() {
       type: data.type,
       ...(data.type === 'pizza' && { no_of_slices: +data.no_of_slices, diameter: +data.diameter }),
       ...(data.type === 'soup' && { spiciness_scale: +data.spiciness_scale }),
-      ...(data.type === 'sandwich' && { slices_of_bread: data.slices_of_bread }),
+      ...(data.type === 'sandwich' && { slices_of_bread: +data.slices_of_bread }),
     };
     const response = await sendData(dishData);
     if (response.status === 200) {
